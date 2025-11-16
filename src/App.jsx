@@ -79,20 +79,32 @@ export default function App() {
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
           <div>
+ {/* CUADRO DEL LOGO (MOVIDO ARRIBA) */}
+<div className="w-full flex justify-center mb-12">
+  <div className="w-48 h-48 bg-white rounded-2xl shadow-md border border-black/10 flex items-center justify-center">
+    <img
+      src="/images/logo.png"
+      alt="Escudo Kerlegand"
+      className="w-36 h-36 object-contain"
+    />
+  </div>
+</div>
+
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl font-extrabold leading-tight"
+              className="text-4xl md:text-5xl font-extrabold leading-tight text-center"
             >
-              SEMPER ALTIUS
+              EDUCACIÓN DE VANGUARDIA
             </motion.h2>
-            <p className="mt-4 text-lg text-gray-700">
-              Acompañamos con cariño y propósito cada etapa para que niñas y
-              niños crezcan felices, curiosos y seguros. Aprender jugando es el
-              corazón de nuestro día a día.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <p className="mt-12 text-lg text-gray-700 text-justify">
+  Acompañamos cada paso con cariño y propósito, para que niñas y niños crezcan seguros,
+  felices y llenos de curiosidad. Nuestra educación de vanguardia, junto con un
+  inglés profundamente avanzado, abre puertas y siembra en ellos las
+  oportunidades que transformarán su vida futura.
+</p>
+            <div className="mt-12 flex flex-wrap gap-3">
               <a
                 href="#admisiones"
                 className="rounded-2xl px-5 py-3 bg-[var(--olive)] text-white font-semibold shadow-sm hover:opacity-90"
@@ -219,7 +231,7 @@ export default function App() {
             <h3 className="text-2xl md:text-3xl font-bold">
               Familia y comunidad
             </h3>
-            <p className="mt-2 text-white/90">
+            <p className="mt-2 text-white/90 text-justify">
               La participación de madres y padres, los encuentros formativos y
               las tradiciones veracruzanas fortalecen nuestra identidad y el
               aprendizaje de cada niña y niño.
@@ -319,17 +331,16 @@ export default function App() {
             </p>
             <div className="mt-6 space-y-2 text-sm">
               <p>
-                <strong>Tel.:</strong> (229) 000 0000
+                <strong>Tel.:</strong> (229) 1337389
               </p>
               <p>
                 <strong>Email:</strong> informes@kerlegand.edu.mx
               </p>
               <p>
-                <strong>Dirección:</strong> Calle / Colonia / C.P. — Veracruz,
-                Ver.
+                <strong>Dirección:</strong> Cofre de Perote #837. Esq. J.B. Lobos, Los Volcanes, Ver.
               </p>
               <p>
-                <strong>Horario:</strong> Lun–Vie 8:00–14:00
+                <strong>Horario:</strong> Lun–Vie 8:00–20:00
               </p>
             </div>
           </div>
