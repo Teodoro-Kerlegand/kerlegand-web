@@ -41,7 +41,11 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* Reemplaza por <img src="/images/logo.png" ... /> cuando tengas logo */}
-            <div className="w-10 h-10 rounded-xl bg-[var(--olive)]" />
+            <div
+  className="w-10 h-10 rounded-xl"
+  style={{ backgroundColor: "#C70000" }}
+/>
+
             <div>
               <p className="text-sm tracking-wider text-[var(--olive)]">
                 CENTRO EDUCATIVO INFANTIL
